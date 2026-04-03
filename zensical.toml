@@ -4,12 +4,11 @@ site_description = "Online help for the boostME fitness coaching platform"
 site_author = "boostME Team"
 site_url = "https://jthdev.github.io/boostME/"
 copyright = """
-Copyright &copy; 2026 boostME
+Copyright &copy; 2026 Jan Thielscher
 """
 
 [project.theme]
 language = "en"
-custom_dir = "overrides"
 favicon = "assets/favicon.png"
 
 [[project.theme.palette]]
