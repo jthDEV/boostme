@@ -9,7 +9,6 @@ Copyright &copy; 2026 Jan Thielscher
 
 [project.theme]
 language = "en"
-custom_dir = "overrides"
 favicon = "assets/favicon.png"
 
 [[project.theme.palette]]
