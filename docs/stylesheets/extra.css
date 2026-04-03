@@ -1,84 +1,223 @@
-/* boostME Design System — mat-black / chalk / power-red */
+/* boostME Design System — mat-black / chalk / power-red / signal-orange */
+
+/* ── Palette tokens ── */
+:root {
+  --bme-red:            #dc2626;
+  --bme-red-light:      #ef4444;
+  --bme-red-dark:       #b91c1c;
+  --bme-red-accent:     #f87171;
+  --bme-orange:         #f97316;
+  --bme-orange-light:   #fb923c;
+  --bme-orange-bg:      rgba(249, 115, 22, 0.12);
+  --bme-black:          #0a0a0a;
+  --bme-black-light:    #141414;
+  --bme-black-code:     #1a1a1a;
+  --bme-chalk:          #e5e5e5;
+  --bme-chalk-muted:    #a3a3a3;
+  --bme-border:         #262626;
+}
 
 /* ── Primary: power-red ── */
 :root,
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color:        #dc2626;
-  --md-primary-fg-color--light: #ef4444;
-  --md-primary-fg-color--dark:  #b91c1c;
-  --md-accent-fg-color:         #f87171;
-  --md-accent-fg-color--transparent: rgba(248, 113, 113, 0.12);
+  --md-primary-fg-color:             var(--bme-red);
+  --md-primary-fg-color--light:      var(--bme-red-light);
+  --md-primary-fg-color--dark:       var(--bme-red-dark);
+  --md-accent-fg-color:              var(--bme-orange);
+  --md-accent-fg-color--transparent: var(--bme-orange-bg);
+  --md-typeset-a-color:              var(--bme-red);
 }
 
 /* ── Dark mode (slate) — mat-black background ── */
 [data-md-color-scheme="slate"] {
-  --md-default-bg-color:        #0a0a0a;
-  --md-default-bg-color--light: #141414;
-  --md-default-fg-color:        #e5e5e5;
-  --md-default-fg-color--light: #a3a3a3;
-  --md-primary-fg-color:        #dc2626;
-  --md-primary-fg-color--light: #ef4444;
-  --md-primary-fg-color--dark:  #b91c1c;
-  --md-accent-fg-color:         #f87171;
-  --md-accent-fg-color--transparent: rgba(248, 113, 113, 0.12);
-  --md-code-bg-color:           #1a1a1a;
-  --md-typeset-a-color:         #f87171;
+  --md-default-bg-color:             var(--bme-black);
+  --md-default-bg-color--light:      var(--bme-black-light);
+  --md-default-fg-color:             var(--bme-chalk);
+  --md-default-fg-color--light:      var(--bme-chalk-muted);
+  --md-primary-fg-color:             var(--bme-red);
+  --md-primary-fg-color--light:      var(--bme-red-light);
+  --md-primary-fg-color--dark:       var(--bme-red-dark);
+  --md-accent-fg-color:              var(--bme-orange);
+  --md-accent-fg-color--transparent: var(--bme-orange-bg);
+  --md-code-bg-color:                var(--bme-black-code);
+  --md-typeset-a-color:              var(--bme-red-accent);
+}
+
+/* ── Links — force red, orange hover ── */
+.md-typeset a {
+  color: var(--md-typeset-a-color);
+  transition: color 0.15s ease;
+}
+
+.md-typeset a:hover,
+.md-typeset a:focus {
+  color: var(--bme-orange);
 }
 
 /* ── Header ── */
 .md-header {
-  background-color: #0a0a0a;
-  border-bottom: 1px solid #262626;
+  background-color: var(--bme-black);
+  border-bottom: 1px solid var(--bme-border);
 }
 
 [data-md-color-scheme="default"] .md-header {
-  background-color: #dc2626;
+  background-color: var(--bme-red);
+  border-bottom: none;
+}
+
+/* ── Tabs (top navigation) ── */
+.md-tabs {
+  background-color: inherit;
 }
 
 /* ── Navigation sidebar ── */
 [data-md-color-scheme="slate"] .md-sidebar {
-  background-color: #0a0a0a;
+  background-color: var(--bme-black);
 }
 
-/* ── Active nav item ── */
+/* ── Active nav item — orange marker ── */
 .md-nav__item--active > .md-nav__link {
-  color: var(--md-accent-fg-color);
+  color: var(--bme-orange);
   font-weight: 600;
+}
+
+.md-nav__link:hover {
+  color: var(--bme-orange-light);
+}
+
+/* ── Search highlight ── */
+.md-search-result .md-typeset mark {
+  background-color: var(--bme-orange-bg);
+  color: var(--bme-orange);
 }
 
 /* ── Footer ── */
 .md-footer {
-  background-color: #0a0a0a;
-  border-top: 1px solid #262626;
+  background-color: var(--bme-black);
+  border-top: 1px solid var(--bme-border);
 }
 
 [data-md-color-scheme="default"] .md-footer {
   background-color: #171717;
 }
 
-/* ── Admonitions — tip uses accent ── */
+/* ── Buttons & CTAs — orange signal ── */
+.md-typeset .md-button--primary {
+  background-color: var(--bme-orange);
+  border-color: var(--bme-orange);
+  color: #fff;
+}
+
+.md-typeset .md-button--primary:hover {
+  background-color: var(--bme-orange-light);
+  border-color: var(--bme-orange-light);
+}
+
+.md-typeset .md-button {
+  border-color: var(--bme-red);
+  color: var(--bme-red);
+}
+
+.md-typeset .md-button:hover {
+  background-color: var(--bme-red);
+  border-color: var(--bme-red);
+  color: #fff;
+}
+
+/* ── Admonitions — tip uses orange signal ── */
 .md-typeset .admonition.tip,
 .md-typeset details.tip {
-  border-color: var(--md-accent-fg-color);
+  border-color: var(--bme-orange);
 }
 
 .md-typeset .tip > .admonition-title,
 .md-typeset .tip > summary {
-  background-color: var(--md-accent-fg-color--transparent);
+  background-color: var(--bme-orange-bg);
+}
+
+.md-typeset .tip > .admonition-title::before,
+.md-typeset .tip > summary::before {
+  background-color: var(--bme-orange);
+}
+
+/* ── Admonitions — warning/attention also orange ── */
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-color: var(--bme-orange);
+}
+
+.md-typeset .warning > .admonition-title,
+.md-typeset .warning > summary {
+  background-color: var(--bme-orange-bg);
+}
+
+/* ── Admonitions — danger/error uses red ── */
+.md-typeset .admonition.danger,
+.md-typeset details.danger {
+  border-color: var(--bme-red);
+}
+
+.md-typeset .danger > .admonition-title,
+.md-typeset .danger > summary {
+  background-color: rgba(220, 38, 38, 0.12);
 }
 
 /* ── Code blocks ── */
 [data-md-color-scheme="slate"] .md-typeset code {
-  background-color: #1a1a1a;
-  color: #e5e5e5;
+  background-color: var(--bme-black-code);
+  color: var(--bme-chalk);
+}
+
+/* ── Inline code — subtle border ── */
+[data-md-color-scheme="slate"] .md-typeset :not(pre) > code {
+  border: 1px solid var(--bme-border);
 }
 
 /* ── Tables ── */
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
-  background-color: #1a1a1a;
-  color: #e5e5e5;
+  background-color: var(--bme-black-code);
+  color: var(--bme-chalk);
 }
 
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) td {
-  border-color: #262626;
+  border-color: var(--bme-border);
+}
+
+/* ── Scrollbar (dark mode) ── */
+[data-md-color-scheme="slate"] ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+[data-md-color-scheme="slate"] ::-webkit-scrollbar-track {
+  background: var(--bme-black);
+}
+
+[data-md-color-scheme="slate"] ::-webkit-scrollbar-thumb {
+  background: var(--bme-border);
+  border-radius: 4px;
+}
+
+[data-md-color-scheme="slate"] ::-webkit-scrollbar-thumb:hover {
+  background: var(--bme-chalk-muted);
+}
+
+/* ── Content tabs — orange active indicator ── */
+.md-typeset .tabbed-labels > label.tabbed-alternate:checked,
+.md-typeset .tabbed-labels > label:hover {
+  color: var(--bme-orange);
+}
+
+.md-typeset .tabbed-labels > label.tabbed-alternate[checked]::after {
+  background-color: var(--bme-orange);
+}
+
+/* ── Back-to-top button ── */
+.md-top {
+  background-color: var(--bme-orange);
+  color: #fff;
+}
+
+.md-top:hover {
+  background-color: var(--bme-orange-light);
 }
