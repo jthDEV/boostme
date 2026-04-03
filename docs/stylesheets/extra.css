@@ -1,0 +1,84 @@
+/* boostME Design System — mat-black / chalk / power-red */
+
+/* ── Primary: power-red ── */
+:root,
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        #dc2626;
+  --md-primary-fg-color--light: #ef4444;
+  --md-primary-fg-color--dark:  #b91c1c;
+  --md-accent-fg-color:         #f87171;
+  --md-accent-fg-color--transparent: rgba(248, 113, 113, 0.12);
+}
+
+/* ── Dark mode (slate) — mat-black background ── */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color:        #0a0a0a;
+  --md-default-bg-color--light: #141414;
+  --md-default-fg-color:        #e5e5e5;
+  --md-default-fg-color--light: #a3a3a3;
+  --md-primary-fg-color:        #dc2626;
+  --md-primary-fg-color--light: #ef4444;
+  --md-primary-fg-color--dark:  #b91c1c;
+  --md-accent-fg-color:         #f87171;
+  --md-accent-fg-color--transparent: rgba(248, 113, 113, 0.12);
+  --md-code-bg-color:           #1a1a1a;
+  --md-typeset-a-color:         #f87171;
+}
+
+/* ── Header ── */
+.md-header {
+  background-color: #0a0a0a;
+  border-bottom: 1px solid #262626;
+}
+
+[data-md-color-scheme="default"] .md-header {
+  background-color: #dc2626;
+}
+
+/* ── Navigation sidebar ── */
+[data-md-color-scheme="slate"] .md-sidebar {
+  background-color: #0a0a0a;
+}
+
+/* ── Active nav item ── */
+.md-nav__item--active > .md-nav__link {
+  color: var(--md-accent-fg-color);
+  font-weight: 600;
+}
+
+/* ── Footer ── */
+.md-footer {
+  background-color: #0a0a0a;
+  border-top: 1px solid #262626;
+}
+
+[data-md-color-scheme="default"] .md-footer {
+  background-color: #171717;
+}
+
+/* ── Admonitions — tip uses accent ── */
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-color: var(--md-accent-fg-color);
+}
+
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary {
+  background-color: var(--md-accent-fg-color--transparent);
+}
+
+/* ── Code blocks ── */
+[data-md-color-scheme="slate"] .md-typeset code {
+  background-color: #1a1a1a;
+  color: #e5e5e5;
+}
+
+/* ── Tables ── */
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background-color: #1a1a1a;
+  color: #e5e5e5;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) td {
+  border-color: #262626;
+}
