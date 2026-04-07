@@ -41,6 +41,7 @@ features = [
 
 [project.extra]
 extra_css = ["stylesheets/extra.css"]
+extra_javascript = ["javascripts/brand.js"]
 
 [[project.nav]]
 Home = "index.md"

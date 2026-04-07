@@ -54,6 +54,17 @@
   color: var(--bme-orange);
 }
 
+/* ── "ME" in boostME — brand red ── */
+.bme-me {
+  color: var(--bme-red);
+  font-weight: 700;
+}
+
+[data-md-color-scheme="default"] .md-header .bme-me {
+  /* Header background is red in light mode — use chalk for contrast */
+  color: var(--bme-chalk);
+}
+
 /* ── Header ── */
 .md-header {
   background-color: var(--bme-black);
