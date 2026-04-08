@@ -12,11 +12,11 @@ Rate your overall feeling with one of five options:
 
 | Rating | Meaning |
 |---|---|
-| :face_with_spiral_eyes: Too Heavy | The workout was too intense |
-| :persevere: Heavy But OK | Tough, but manageable |
-| :muscle: Just Fine | Good intensity, well balanced |
-| :relieved: A Bit Too Low | Could have pushed harder |
-| :yawning_face: Boring | Way too easy |
+| 😵‍💫 Too Heavy | The workout was too intense |
+| 😣 Heavy But OK | Tough, but manageable |
+| 💪 Just Fine | Good intensity, well balanced |
+| 😌 A Bit Too Low | Could have pushed harder |
+| 🥱 Boring | Way too easy |
 
 This feedback helps the AI and your coach calibrate future sessions.
 
