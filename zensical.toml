@@ -6,6 +6,8 @@ site_url = "https://jthdev.github.io/boostME/"
 copyright = """
 Copyright &copy; 2026 Jan Thielscher
 """
+extra_css = ["stylesheets/extra.css"]
+extra_javascript = ["javascripts/brand.js"]
 
 [project.theme]
 language = "en"
@@ -38,10 +40,6 @@ features = [
   "search.highlight",
   "toc.integrate",
 ]
-
-[project.extra]
-extra_css = ["stylesheets/extra.css"]
-extra_javascript = ["javascripts/brand.js"]
 
 [[project.nav]]
 Home = "index.md"
