@@ -10,37 +10,37 @@ Whether you're an athlete looking to level up your training or a coach building 
 
 <div class="grid cards" markdown>
 
--   :material-run-fast: **Getting Started**
+-   **Getting Started**
 
     ---
 
     Create your account, verify your email, and set up your profile.
 
-    [:octicons-arrow-right-24: Get started](getting-started/index.md)
+    [Get started →](getting-started/index.md)
 
--   :material-dumbbell: **Athlete Guide**
+-   **Athlete Guide**
 
     ---
 
-    Training plans, sessions, timers, feedback, history, coaches, and daily WODs.
+    Training plans, sessions, timers, feedback, history, coaches, chats, and daily WODs.
 
-    [:octicons-arrow-right-24: Athlete guide](athlete/index.md)
+    [Athlete guide →](athlete/index.md)
 
--   :material-whistle: **Coach Guide**
+-   **Coach Guide**
 
     ---
 
     Onboarding, profile setup, athlete management, WOD Builder, and session editing.
 
-    [:octicons-arrow-right-24: Coach guide](coach/index.md)
+    [Coach guide →](coach/index.md)
 
--   :material-clipboard-text-clock: **Changelog**
+-   **Changelog**
 
     ---
 
     What's new in boostME — features, fixes, and improvements.
 
-    [:octicons-arrow-right-24: Changelog](changelog.md)
+    [Changelog →](changelog.md)
 
 </div>
 
@@ -55,6 +55,8 @@ Whether you're an athlete looking to level up your training or a coach building 
 | Generate a training plan | [Training Plans](athlete/plans.md) |
 | Start a workout session | [Sessions & Timers](athlete/sessions.md) |
 | Find a coach | [Coaches](athlete/coaches.md) |
+| Chat with my coach | [Chats](athlete/chats.md) |
+| Subscribe to WODs or a coach | [Subscribing & Payments](athlete/subscribing.md) |
 | Join daily WODs | [Daily WODs & Leaderboard](athlete/wods.md) |
 | Build a WOD (coaches) | [WOD Builder Guide](coach/wod-builder-guide.md) |
 | Get accredited as a coach | [Onboarding & Accreditation](coach/onboarding.md) |
