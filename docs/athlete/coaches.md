@@ -14,17 +14,15 @@ The **Coach Discovery** page shows available coaches on the platform. Each coach
 
 Tap a coach card to view their full profile with bio, awards, and detailed qualifications.
 
-## Linking to a coach
+## Booking a coach
 
-To start working with a coach:
+A coach profile card offers two actions in its footer:
 
-1. Browse coaches on the Discovery page.
-2. Tap **Request Link** on the coach you'd like to work with.
-3. The coach receives your request and can accept or decline.
-4. Once accepted, the coach appears on your profile and home page.
+- **Try a trial chat with {FirstName}** — opens a no-commitment chat so you can get a feel for the coach's style before paying. See [Chats](chats.md).
+- **Book {FirstName} — {fee} EUR/mo** — starts the paid subscription flow. A consent dialog appears (see [Subscribing & Payments](subscribing.md)) and, once accepted, sends you to Stripe Hosted Checkout. After a successful payment you are routed directly into the full-page chat with your new coach.
 
 !!! info
-    You can be linked to one coach at a time. To switch coaches, unlink from your current coach first.
+    You can be booked with one human coach at a time. To switch coaches, cancel your current booking first.
 
 ## Personal AI Coach
 
@@ -35,19 +33,12 @@ The Personal AI Coach is a premium feature where you're linked to an AI coach pe
 - Reacts to your workout results with personalized advice
 - Adapts your training based on your feedback history
 
-## In-session coaching
+## Chatting with your coach
 
-When you're linked to a coach (AI or human), the session page includes a **coach chat** toggle. During your workout you can:
+All coach conversations live on the [Chats page](chats.md) as a full-page view. You can also open the chat in-session (tap the coach avatar on the session page) or post-session on the [Feedback page](feedback.md) — all three surfaces share the same thread.
+
+During a workout you can use the chat to:
 
 - Ask questions about exercises or scaling
 - Get encouragement and form tips
 - Discuss modifications if something feels wrong
-
-The coach avatar appears on the session page. Tap it to open the chat.
-
-## Coach chat during feedback
-
-After completing a session, the [Feedback page](feedback.md) includes a dedicated coach section with:
-
-- An AI-generated reaction to your performance
-- A short post-session chat for discussing how the workout went

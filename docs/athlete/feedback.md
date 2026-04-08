@@ -41,7 +41,7 @@ For skill and strength blocks, you can record the **weight used for each exercis
 If you're linked to a coach (AI or human), the feedback page includes:
 
 - An **AI-generated reaction** based on your workout performance and feeling rating — personalized and motivational.
-- A **chat section** where you can have a short post-session conversation with your coach about the workout.
+- A **chat section** where you can have a short post-session conversation with your coach about the workout. This thread is the same one you see on the [Chats page](chats.md).
 
 !!! info
     The post-session chat is designed for a brief exchange (2–3 messages). If you raise a health concern, the conversation extends to address it properly.

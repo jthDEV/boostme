@@ -58,10 +58,9 @@ The leaderboard shows each athlete's display name and result. A label at the top
 
 ## Subscription
 
-WOD access requires an active subscription:
+WOD access requires an active subscription at **9,99 EUR / month**.
 
-- **Monthly**: 9.99 EUR/month
-- **Yearly**: 100 EUR/year
+When you subscribe, a consent dialog opens with three checkboxes (Terms of Service, Privacy Policy, and immediate-start waiver). After accepting, you are redirected to Stripe Hosted Checkout. See [Subscribing & Payments](subscribing.md) for the full flow and your cancellation options.
 
 !!! tip
-    During the current launch phase, WOD subscriptions are **free** for all users.
+    During the current launch phase, WOD subscriptions are **free** for all users. The consent dialog still appears so your agreement to the terms is recorded.

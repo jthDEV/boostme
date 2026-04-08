@@ -59,7 +59,9 @@ Home = "index.md"
   { "Feedback & Results" = "athlete/feedback.md" },
   { "Workout History" = "athlete/history.md" },
   { "Coaches" = "athlete/coaches.md" },
+  { "Chats" = "athlete/chats.md" },
   { "Daily WODs & Leaderboard" = "athlete/wods.md" },
+  { "Subscribing & Payments" = "athlete/subscribing.md" },
 ]
 
 [[project.nav]]

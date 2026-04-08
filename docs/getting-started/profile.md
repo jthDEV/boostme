@@ -20,6 +20,9 @@ Your display name appears on leaderboards and in coach interactions. You can cho
 
 A live preview shows exactly how your name will appear.
 
+!!! tip "Which account am I using?"
+    Your display name also appears in the **Logged in as** panel at the top of the sidebar — handy if you juggle multiple accounts. When the sidebar is collapsed, the panel shrinks to a 2-letter initials chip with the full name on hover.
+
 ## Training experience
 
 Select your experience level:
