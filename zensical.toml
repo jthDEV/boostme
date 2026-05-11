@@ -12,6 +12,7 @@ extra_javascript = ["javascripts/brand.js"]
 [project.theme]
 language = "en"
 favicon = "assets/favicon.png"
+logo = "images/bME_Logo_klein.png"
 
 [[project.theme.palette]]
 scheme = "slate"

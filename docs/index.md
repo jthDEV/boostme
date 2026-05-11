@@ -1,3 +1,7 @@
+<div style="text-align: center; margin-bottom: 1rem;">
+  <img src="images/bME_Logo.png" alt="boostME Logo" style="max-width: 280px;">
+</div>
+
 # Welcome to boostME Help
 
 **boostME** is an AI-powered fitness coaching platform that connects athletes with personalized training plans, real-time session tracking, and professional coaches.
